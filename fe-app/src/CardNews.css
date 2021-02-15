@@ -1,0 +1,48 @@
+.div-card-news{
+    width: 100%;
+    height: 200px;
+    
+    margin-top: 20px;
+    border-bottom: 1px solid grey;
+}
+.news-title{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+}
+.created-user{
+    color: rgb(53,159,235);
+}
+.creation-date{
+    margin-left: 30px;
+}
+.news-description{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+   -webkit-line-clamp: 3;
+   line-height: 18px;
+   max-height: 54x;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    margin-top: 20px;
+}
+.read-more{
+    margin-top: 10px;
+    color: rgb(53,159,235);
+}
+.read-more a{
+    text-decoration: none;
+    color: rgb(53,159,235);
+}
+.read-more button{
+    width: 100px;
+    height: 25px;
+    margin-left: 20px;
+    background-color: white;
+    border: 1px solid rgb(53,159,235);
+    color: rgb(53,159,235);
+}
+.read-more button:hover{
+    background-color: rgb(42,127,188);
+    color: white;
+}

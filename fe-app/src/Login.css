@@ -1,0 +1,340 @@
+.divLogin{
+  width: 310px;
+  height: 400px;
+  padding: 30px;
+  
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  text-align: left;
+  font-weight: bold;
+  
+  margin-top: 60px;
+}
+.divLogin p{
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+.inputLoginn{
+  border: 2px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 250px;
+  -webkit-background-fill-color: white !important;
+  color:black !important;
+  
+  -webkit-text-fill-color: black !important;
+  background-color: white !important;
+  height: 25px;
+  font-size: 17px;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(54,65,71);
+  
+}
+
+
+.inputSignup{
+  border: 2px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 250px;
+  -webkit-background-fill-color: white !important;
+  color:black !important;
+  
+  -webkit-text-fill-color: black !important;
+  background-color: white !important;
+  height: 25px;
+}
+
+
+
+
+#buttonLogin{
+  height: 30px;
+  width: 250px;
+  background-color: black;
+  color:white;
+  font-size: 15px;
+  border:none;
+  border-radius: 0;
+  
+  font-weight: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#buttonSingUp{
+  height: 30px;
+  width: 250px;
+  margin-top: 15px;
+  border-radius: 0;
+  background-color: black;
+  color:white;
+  font-size: 15px;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 0;
+}
+#btnLogin{
+  height: 30px;
+  width: 250px;
+  background-color: white;
+  color:black;
+  font-size: 15px;
+  border:none;
+  border-radius: 0;
+  
+  font-weight: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#bthSignUp{
+  height: 30px;
+  width: 250px;
+  background-color: white;
+  color:black;
+  font-size: 15px;
+  border:none;
+  border-radius: 0;
+  
+  font-weight: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.divSignup{
+  width: 310px;
+  height: 400px;
+  padding: 30px;
+  
+  
+  font-size: 17px;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(54,65,71);
+  text-align: left;
+}
+
+.divLogout{
+  width: 600px;
+  height: 180px;
+background-color: rgba(0,0,0,.4);
+  margin:100px auto 0px auto;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: center;
+  padding-top: 60px;
+}
+.buttonInLogout{
+  width: 180px;
+  height: 45px;
+  margin: 10px;
+  color: white;
+  
+  border: none;
+  background-color: rgb(42,127,188);
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+.error{
+  height: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: red;
+  font-size: 12px;
+}
+/**************************/
+.proba{
+  width: 310px;
+  height: 340px;
+  background-color:rgba(0,0,0,.6);
+  padding: 30px;
+  padding-top: 130px;
+  animation: mymove 1s infinite;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  position: relative;
+  right: 620px;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-family: fantasy;
+}
+
+@keyframes mymove {
+  0% {
+    transform: translate(0, 0);    
+  }
+  100% {
+    transform: translate(310px, 0);
+    
+    
+  }
+}
+.proba2{
+  width: 310px;
+  height: 340px;
+  background-color:rgba(0,0,0,.6);
+  padding: 30px;
+  padding-top: 130px;
+  
+  animation: mymove2 1s infinite;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  position: relative;
+  
+  left: -310px;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-family: fantasy;
+}
+
+@keyframes mymove2 {
+  0% {
+    transform: translate(0, 0);    
+  }
+  100% {
+    transform: translate(-310px, 0);
+    
+  }
+}
+@keyframes mymove3 {
+  0% {
+    transform: scaleX(1); 
+    transform-origin:right;
+  }
+  100% {
+    transform: scaleX(0);
+    
+    transform-origin:right;
+    
+  }
+}
+@keyframes mymove4 {
+  0% {
+    transform: scaleX(1); 
+    transform-origin:left;
+  }
+  100% {
+    transform: scaleX(0);
+    
+    transform-origin:left;
+    
+  }
+}
+
+@keyframes mymove5 {
+  0% {
+    transform: scaleX(0); 
+    transform-origin:left;
+  }
+  100% {
+    transform: scaleX(1);
+    
+    transform-origin:left;
+    
+  }
+}
+@keyframes mymove6 {
+  0% {
+    transform: scaleX(0); 
+    transform-origin:right;
+  }
+  100% {
+    transform: scaleX(1);
+    
+    transform-origin:right;
+    
+  }
+}
+
+.effect{
+  display: flex;
+  
+  width: 620px;
+  height: 500px;
+  
+  margin: 0 auto;
+  
+}
+/*.effect div{
+  display: inline-block;
+}*/
+.effect1{
+  width: 310px;
+  height: 500px;
+  background-color: white;
+  animation: mymove5 1s infinite;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  
+  
+  
+}
+.effect2{
+  
+  width: 310px;
+  height: 500px;
+  background-color:white;
+ animation: mymove6 1s infinite;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  
+  
+}
+.effect3{
+  
+  width: 310px;
+  height: 500px;
+  background-color: white;
+  animation: mymove3 1s infinite;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  
+}
+.effect4{
+  background-color: white;
+  width: 310px;
+  height: 500px;
+  animation: mymove4 1s infinite;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+
+  
+}
+.aaa{
+width: 310px;
+}
+.backgroung{
+padding-top: 60px;
+width: 100%;
+height: 800px;
+background: url("https://wallpaperaccess.com/full/552059.jpg") no-repeat;
+background-size: 100% 100%;
+
+}
+#iks{
+  display: flex;
+  height: 40px;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 10px;
+  justify-content: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+#iks a{
+
+width: 100px;
+height: 30px;
+text-decoration: none;
+color: white;
+padding-top: 10px;
+text-align: center;
+cursor: pointer;
+/*background-color: rgb(53,159,235);*/
+}
+#iks a:hover{
+color: black;
+/*background-color: rgb(42,127,188);*/
+}
+
+

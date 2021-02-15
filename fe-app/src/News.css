@@ -1,0 +1,11 @@
+.news-list{
+    width: 1000px;
+    height: 500px;
+    margin: 20px auto;
+}
+.news-list-label{
+    width: 100%;
+    padding: 10px;
+    height: 40px;
+    border-bottom: 3px solid red;
+}
