@@ -33,7 +33,7 @@ namespace SportNews
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "SportNews", Version = "v1" });
             });
             services.AddCors(options => {
-                options.AddPolicy("Corse", builder => {
+                options.AddPolicy("CORS", builder => {
                     builder.AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod();
                 });
             });
@@ -53,6 +53,8 @@ namespace SportNews
 
             app.UseRouting();
 
+            app.UseCors("CORS");
+            
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

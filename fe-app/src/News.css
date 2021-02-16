@@ -9,3 +9,27 @@
     height: 40px;
     border-bottom: 3px solid red;
 }
+
+.news-catrgories{
+    display: flex;
+    height: 35px;
+    padding-left: 100px;
+    border-bottom: 1px solid rgb(220,220,220);
+}
+.news-catrgories a{
+    font-size: 14px;
+    width: 100px;
+    height: 20px;
+    text-decoration: none;
+    color: black;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    cursor: pointer;
+    
+  }
+  .news-catrgories a:hover{
+    
+    color: white;
+    background-color: rgb(53,159,235);
+  }

@@ -14,7 +14,6 @@ namespace SportNews.Controllers
     public class ContentCreatorsController : ControllerBase
     {
 
-
         private IMongoDatabase db = Session.MongoDatabase;
 
         [HttpPost]
@@ -102,8 +101,24 @@ namespace SportNews.Controllers
             return Ok();
         }
         [HttpGet]
+        [Route("getArticlesByCategory/{category}")]
+        public async Task<IActionResult> GetArticlesByCategory([FromRoute] string category)
+        {
+            var collection = db.GetCollection<Article>("Article");
+            var articles = collection.Find(x => x.Category.Text == category).ToList();
+            return new JsonResult(articles);
+        }
+        // [HttpGet]
+        // [Route("getMyArticles/{username}")]
+        // public async Task<IActionResult> GetAllArticles([FromRoute] string username)
+        // {
+        //     var collection = db.GetCollection<Article>("Article");
+        //     var articles = collection.Find(x => x.PostedBy.Username == username).ToList();
+        //     return new JsonResult(articles);
+        // }
+        [HttpGet]
         [Route("getAllArticles")]
-        public async Task<IActionResult> GetAllArticles([FromRoute] string username)
+        public async Task<IActionResult> GetAllArticles()
         {
             var collection = db.GetCollection<Article>("Article");
             var articles = collection.Find(x => true).ToList();

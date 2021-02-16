@@ -56,23 +56,25 @@ export default function App() {
       </Route>
 
       <MainLayout>
-           
-          <Route path="/news">
-              <News/>
-          </Route>
-          <Route path="/create">
-              <CreateNews/>
-          </Route>
-          <Route path="/details">
-              <NewsDetails/>
-          </Route>
-          <Route path="/mynews">
-              <MyNews/>
-          </Route>
-          <Route path="/editnews">
-              <EditNews/>
-          </Route>
-          
+          { user => (
+            <React.Fragment>
+              <Route path="/news/:category">
+                  <News user={user}/>
+              </Route>
+              <Route path="/create">
+                  <CreateNews user={user}/>
+              </Route>
+              <Route path="/details">
+                  <NewsDetails user={user}/>
+              </Route>
+              <Route path="/mynews">
+                  <MyNews user={user}/>
+              </Route>
+              <Route path="/editnews">
+                  <EditNews user={user}/>
+              </Route>
+            </React.Fragment>
+          )}
       </MainLayout>
     </Switch>
   </Router>

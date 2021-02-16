@@ -1,8 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import { Route } from 'react-router';
 import CardNews from "./CardNews";
 
-export default function MyNews(){
+export default function MyNews({user}){
+
+    const [articles,setArticles] = useState()
+
     return(
         <>
         <div className="news-list">

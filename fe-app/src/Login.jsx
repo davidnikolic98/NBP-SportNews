@@ -7,7 +7,8 @@ import './Login.css';
 import { useHistory } from 'react-router-dom';
 
 export default function Login(){
-    const [email, setEmail] = useState("");
+
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [cookies, setCookie, removeCookie] = useCookies(['User']);
   const [nesto,setNesto]=useState(0);
@@ -15,13 +16,15 @@ export default function Login(){
  
   
   const getUser = async () =>{
+
+    
+
+
+
       setCookie("id",1);
       history.push("/news");
     }
     
-    
-    
-
     
     
     
@@ -29,7 +32,6 @@ export default function Login(){
   useEffect(() =>
     {
       
-        
     }, []);
 
 

@@ -15,7 +15,7 @@ export default function Header(){
             <span id="sport">Sport</span><span id="news">News</span><span id="com">.com</span>
         </div>
         <div className="header-two">
-            <Link to="/news">NEWS</Link>
+            <Link to="/news/latest">NEWS</Link>
             {cookies.id != null ? <><Link to="/create">CREATE</Link><Link to="/mynews">MY NEWS</Link><Link to="/logout">LOGOUT</Link></>:<Link to="/login">LOGIN</Link>}
         </div>
         </>
