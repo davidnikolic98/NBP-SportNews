@@ -30,7 +30,7 @@ export default function Login() {
         "https://localhost:5001/ContentCreators/getUser/" + email,
         requestOptions
       );
-      const data2 = await response.json();
+      const data2 = await response2.json();
       setCookie("type", false);
       if (data2 == null) return;
     } else {
