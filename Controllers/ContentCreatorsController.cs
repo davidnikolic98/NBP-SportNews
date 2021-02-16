@@ -118,17 +118,15 @@ namespace SportNews.Controllers
             return new JsonResult(contentCreator);
         }
         [HttpPut]
-        [Route("UpdateArticle")]
-        public async Task<IActionResult> UpdateArticle([FromBody] Article article)
+        [Route("UpdateArticle/{title}/{text}")]
+        public async Task<IActionResult> UpdateArticle([FromRoute] string title,[FromRoute] string text)
         {
             var collection = db.GetCollection<Article>("Article");
-            if (collection.Find(x => x.Title == article.Title).FirstOrDefault() != null)
-            {
-                return BadRequest("New name already exists!");
-            }
-            var filter = Builders<Article>.Filter.Eq(x => x.Id, article.Id);
-            var update = Builders<Article>.Update.Set(x => x.Text, article.Text).Set(x => x.Tags, article.Tags).Set(x => x.Category, article.Category);
-            collection.UpdateOne(filter, update);
+        
+            var filter = Builders<Article>.Filter.Eq(x => x.Title, title);
+            var update = Builders<Article>.Update.Set(x => x.Text, text);
+            //collection.ReplaceOne(x => x.Id == article.Id , article);
+            collection.UpdateOne(filter,update);
             return Ok();
         }
         [HttpDelete]
@@ -197,7 +195,7 @@ namespace SportNews.Controllers
             foreach (Article article in articleList)
             {
                 article.Category = category;
-                await UpdateArticle(article);
+                await UpdateArticle(article.Title,article.Text);
             }
 
             return Ok();
@@ -305,7 +303,7 @@ namespace SportNews.Controllers
                 t = tag;
                 article.Tags.Add(t);
 
-                await UpdateArticle(article);
+                await UpdateArticle(article.Title,article.Text);
             }
 
             return Ok();
@@ -328,7 +326,7 @@ namespace SportNews.Controllers
                     Tag t = article.Tags.Where(x => x.Text == tag.Text).FirstOrDefault();
                     article.Tags.Remove(t);
 
-                    await UpdateArticle(article);
+                    await UpdateArticle(article.Title,article.Text);
                 }
 
                 return new JsonResult(articleList);

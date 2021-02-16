@@ -20,8 +20,6 @@ export default function MyNews({user}){
             }};
         const response = await fetch("https://localhost:5001/ContentCreators/getArticlesByUsername/" + user.username,requestOptions);
         const data = await response.json();
-        
-        console.log(data);
         setArticles(data);
     }
 

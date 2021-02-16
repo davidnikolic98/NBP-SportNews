@@ -25,8 +25,6 @@ export default function News({user}){
                 }};
             const response = await fetch("https://localhost:5001/ContentCreators/getAllArticles",requestOptions);
             const data = await response.json();
-            
-            console.log(data);
             setArticles(data);
         }
         else{
@@ -37,8 +35,6 @@ export default function News({user}){
                 }};
             const response = await fetch("https://localhost:5001/ContentCreators/getArticlesByCategory/" + category,requestOptions);
             const data = await response.json();
-            
-            console.log(data);
             setArticles(data);
         }
     }
