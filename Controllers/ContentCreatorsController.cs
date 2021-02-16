@@ -139,6 +139,8 @@ namespace SportNews.Controllers
             var userList = collectionUsers.Find(x => true).ToList<User>();
             for (int i=0;i<userList.Count;i++)
             {
+                if(userList[i].Articles == null)
+                    continue;
                 IList<Article> newReadList = new List<Article>();
                 IList<Article> newRecommendedList = new List<Article>();
                 IList<Article> readList = userList[i].Articles;
@@ -161,7 +163,7 @@ namespace SportNews.Controllers
                 collectionUsers.UpdateOne(filterRecommended, updateRecommended);
             }
             var collection = db.GetCollection<Article>("Article");
-            collection.DeleteOne(x => x.Id == article.Id);
+            collection.DeleteOne(x => x.Title == article.Title); 
             
             return Ok();
         }
