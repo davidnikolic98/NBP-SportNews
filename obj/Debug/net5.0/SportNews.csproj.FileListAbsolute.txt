@@ -39,3 +39,44 @@ D:\Podaci\7. sem\Napredne baze podataka\SportNews\bin\Debug\net5.0\SportNews.dll
 D:\Podaci\7. sem\Napredne baze podataka\SportNews\bin\Debug\net5.0\ref\SportNews.dll
 D:\Podaci\7. sem\Napredne baze podataka\SportNews\bin\Debug\net5.0\SportNews.pdb
 D:\Podaci\7. sem\Napredne baze podataka\SportNews\obj\Debug\net5.0\SportNews.genruntimeconfig.cache
+C:\Users\dukip\Desktop\NBP-SportNews\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\dukip\Desktop\NBP-SportNews\bin\Debug\net5.0\appsettings.json
+C:\Users\dukip\Desktop\NBP-SportNews\bin\Debug\net5.0\fe-app\package-lock.json
+C:\Users\dukip\Desktop\NBP-SportNews\bin\Debug\net5.0\fe-app\package.json
+C:\Users\dukip\Desktop\NBP-SportNews\bin\Debug\net5.0\fe-app\public\manifest.json
+C:\Users\dukip\Desktop\NBP-SportNews\bin\Debug\net5.0\SportNews.exe
+C:\Users\dukip\Desktop\NBP-SportNews\bin\Debug\net5.0\SportNews.deps.json
+C:\Users\dukip\Desktop\NBP-SportNews\bin\Debug\net5.0\SportNews.runtimeconfig.json
+C:\Users\dukip\Desktop\NBP-SportNews\bin\Debug\net5.0\SportNews.runtimeconfig.dev.json
+C:\Users\dukip\Desktop\NBP-SportNews\bin\Debug\net5.0\SportNews.dll
+C:\Users\dukip\Desktop\NBP-SportNews\bin\Debug\net5.0\ref\SportNews.dll
+C:\Users\dukip\Desktop\NBP-SportNews\bin\Debug\net5.0\SportNews.pdb
+C:\Users\dukip\Desktop\NBP-SportNews\bin\Debug\net5.0\DnsClient.dll
+C:\Users\dukip\Desktop\NBP-SportNews\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\dukip\Desktop\NBP-SportNews\bin\Debug\net5.0\MongoDB.Bson.dll
+C:\Users\dukip\Desktop\NBP-SportNews\bin\Debug\net5.0\MongoDB.Driver.dll
+C:\Users\dukip\Desktop\NBP-SportNews\bin\Debug\net5.0\MongoDB.Driver.Core.dll
+C:\Users\dukip\Desktop\NBP-SportNews\bin\Debug\net5.0\MongoDB.Libmongocrypt.dll
+C:\Users\dukip\Desktop\NBP-SportNews\bin\Debug\net5.0\SharpCompress.dll
+C:\Users\dukip\Desktop\NBP-SportNews\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\dukip\Desktop\NBP-SportNews\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\dukip\Desktop\NBP-SportNews\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\dukip\Desktop\NBP-SportNews\bin\Debug\net5.0\runtimes\win\native\libzstd.dll
+C:\Users\dukip\Desktop\NBP-SportNews\bin\Debug\net5.0\runtimes\win\native\snappy32.dll
+C:\Users\dukip\Desktop\NBP-SportNews\bin\Debug\net5.0\runtimes\win\native\snappy64.dll
+C:\Users\dukip\Desktop\NBP-SportNews\obj\Debug\net5.0\SportNews.csprojAssemblyReference.cache
+C:\Users\dukip\Desktop\NBP-SportNews\obj\Debug\net5.0\SportNews.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dukip\Desktop\NBP-SportNews\obj\Debug\net5.0\SportNews.AssemblyInfoInputs.cache
+C:\Users\dukip\Desktop\NBP-SportNews\obj\Debug\net5.0\SportNews.AssemblyInfo.cs
+C:\Users\dukip\Desktop\NBP-SportNews\obj\Debug\net5.0\SportNews.csproj.CoreCompileInputs.cache
+C:\Users\dukip\Desktop\NBP-SportNews\obj\Debug\net5.0\SportNews.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\dukip\Desktop\NBP-SportNews\obj\Debug\net5.0\SportNews.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\dukip\Desktop\NBP-SportNews\obj\Debug\net5.0\staticwebassets\SportNews.StaticWebAssets.Manifest.cache
+C:\Users\dukip\Desktop\NBP-SportNews\obj\Debug\net5.0\staticwebassets\SportNews.StaticWebAssets.xml
+C:\Users\dukip\Desktop\NBP-SportNews\obj\Debug\net5.0\scopedcss\bundle\SportNews.styles.css
+C:\Users\dukip\Desktop\NBP-SportNews\obj\Debug\net5.0\SportNews.RazorTargetAssemblyInfo.cache
+C:\Users\dukip\Desktop\NBP-SportNews\obj\Debug\net5.0\SportNews.csproj.CopyComplete
+C:\Users\dukip\Desktop\NBP-SportNews\obj\Debug\net5.0\SportNews.dll
+C:\Users\dukip\Desktop\NBP-SportNews\obj\Debug\net5.0\ref\SportNews.dll
+C:\Users\dukip\Desktop\NBP-SportNews\obj\Debug\net5.0\SportNews.pdb
+C:\Users\dukip\Desktop\NBP-SportNews\obj\Debug\net5.0\SportNews.genruntimeconfig.cache

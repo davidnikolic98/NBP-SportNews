@@ -128,7 +128,7 @@ namespace SportNews.Controllers
         [Route("getArticle/{name}")]
         public async Task<IActionResult> getArticle([FromRoute] string name)
         {
-            var collection = db.GetCollection<Article>("ContentCreator");
+            var collection = db.GetCollection<Article>("Article");
             var contentCreator = collection.Find(x => x.Title == name).FirstOrDefault();
             return new JsonResult(contentCreator);
         }
