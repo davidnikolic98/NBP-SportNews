@@ -47,7 +47,7 @@ export default function News({user}){
     return(
         <>
         <div className="news-catrgories">
-            <Link to="/news/football">Football</Link>
+            <Link to="/news/Football">Football</Link>
             <Link to="/news/formula1">Formula 1</Link>
             <Link to="/news/tennis">Tennis</Link>
             <Link to="/news/golf">Golf</Link>
