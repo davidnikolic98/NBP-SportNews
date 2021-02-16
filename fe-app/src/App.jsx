@@ -70,7 +70,7 @@ export default function App() {
               <Route path="/mynews">
                   <MyNews user={user}/>
               </Route>
-              <Route path="/editnews">
+              <Route path="/editnews/:name">
                   <EditNews user={user}/>
               </Route>
             </React.Fragment>

@@ -6,6 +6,8 @@ export default function MyNews({user}){
 
     const [articles,setArticles] = useState()
 
+    
+
     return(
         <>
         <div className="news-list">
