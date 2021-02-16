@@ -28,6 +28,7 @@ export default function Logout() {
   
  const yes = ()=>{
     removeCookie("id");
+    removeCookie("type");
 
     
     history.push("/news");
