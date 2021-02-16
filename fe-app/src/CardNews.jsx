@@ -5,9 +5,7 @@ import {
     Switch,
     Route,
     Link,
-    NavLink,
-    
-    
+    NavLink
   } from "react-router-dom";
 import './CardNews.css'
 

@@ -61,16 +61,16 @@ export default function CreateNews(){
         
         setCategory(data);
 
-        writeArticle()
+        writeArticle(data)
     }
 
-    async function writeArticle (){
-        console.log(JSON.stringify({ "postedBy": user, "category": category, "tags": tags, "text": content, "title": title }));
+    async function writeArticle (data){
+        console.log(JSON.stringify({ "postedBy": user,"created": Date.now() ,"category": data, "tags": tags, "text": content, "title": title }));
         const requestOptions = {
           method: 'POST',
           headers: {  'Accept': 'application/json',
                       'Content-Type': 'application/json', },
-          body: JSON.stringify({ "postedBy": user, "category": category, "tags": tags, "text": content, "title": title })};
+          body: JSON.stringify({ "postedBy": user,"created": new Date(), "category": data, "tags": tags, "text": content, "title": title })};
         const response = await fetch('https://localhost:5001/ContentCreators/writeArticle', requestOptions);
         if(response.ok)
         {

@@ -31,10 +31,10 @@ export default function Login() {
         requestOptions
       );
       const data2 = await response2.json();
-      setCookie("type", false);
+      setCookie("tip", "netacno");
       if (data2 == null) return;
     } else {
-      setCookie("type", true);
+      setCookie("tip", "tacno");
     }
     setCookie("id", email);
     history.push("/news");

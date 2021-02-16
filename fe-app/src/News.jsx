@@ -48,10 +48,10 @@ export default function News({user}){
         <>
         <div className="news-catrgories">
             <Link to="/news/Football">Football</Link>
-            <Link to="/news/formula1">Formula 1</Link>
-            <Link to="/news/tennis">Tennis</Link>
-            <Link to="/news/golf">Golf</Link>
-            <Link to="/news/basketball">Basketball</Link>
+            <Link to="/news/Formula1">Formula 1</Link>
+            <Link to="/news/Tennis">Tennis</Link>
+            <Link to="/news/Golf">Golf</Link>
+            <Link to="/news/Basketball">Basketball</Link>
         </div>
         <div className="news-list">
             <div className="news-list-label">{category.toUpperCase()}</div>

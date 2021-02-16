@@ -16,7 +16,19 @@ export default function Header(){
         </div>
         <div className="header-two">
             <Link to="/news/latest">NEWS</Link>
-            {cookies.id != null ? <><Link to="/create">CREATE</Link><Link to="/mynews">MY NEWS</Link><Link to="/logout">LOGOUT</Link></>:<Link to="/login">LOGIN</Link>}
+            {cookies.id != null ?
+            <>
+                {cookies.tip == "tacno" &&
+                <>
+                <Link to="/create">CREATE</Link>
+                <Link to="/mynews">MY NEWS</Link>
+                </>
+                }
+                <Link to="/logout">LOGOUT</Link>
+            </>
+            :
+            <Link to="/login">LOGIN</Link>
+            }
         </div>
         </>
     );

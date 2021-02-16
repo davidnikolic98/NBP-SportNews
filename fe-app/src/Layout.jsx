@@ -10,7 +10,6 @@ export default function MainLayout({ children }){
     const [cookies] = useCookies(['user']);
 
     useEffect(() => {
-        console.log("Cao");
         getUser();
     },[] );
 
@@ -21,10 +20,16 @@ export default function MainLayout({ children }){
             headers:{
                 'Content-Type': 'application/json',
             }};
-        const response = await fetch("https://localhost:5001/ContentCreators/getContentCreator/" + cookies.id,requestOptions);
+
+        var response = null;
+
+        if(cookies.tip == "tacno")
+            response = await fetch("https://localhost:5001/ContentCreators/getContentCreator/" + cookies.id,requestOptions);
+        else
+            response = await fetch("https://localhost:5001/ContentCreators/getUser/" + cookies.id,requestOptions);
+
         const data = await response.json();
-        
-        console.log(data);
+
         setUser(data);
     }
 

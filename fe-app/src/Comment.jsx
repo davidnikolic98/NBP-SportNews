@@ -1,14 +1,15 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import { Route } from 'react-router';
 import './Comment.css'
 
 
-export default function Comment(){
+export default function Comment({username,text}){
+
     return(
         <>
         <div className="div-comment">
-            <p className="comment-nickname">Peroslav</p>
-            <p className="comment-text">The fitness enthusiast Malaika Arora surely knows how to impress the fashion police. Whether she is sporting casuals or rocking a stylish dress, the Chaiya Chaiya girl</p>
+            <p className="comment-nickname">{username}</p>
+            <p className="comment-text">{text}</p>
         </div>
         
         </>

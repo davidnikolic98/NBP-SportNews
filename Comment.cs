@@ -16,5 +16,7 @@ namespace SportNews
         public ObjectId User{ get; set; }
         public ObjectId Article { get; set; }
 
+        public string Username {get;set;}
+
     }
 }

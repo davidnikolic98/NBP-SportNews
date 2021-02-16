@@ -210,7 +210,14 @@ namespace SportNews.Controllers
             var articles = collection.Find(x => x.Category.Text == category).ToList();
             return new JsonResult(articles);
         }
-
+        [HttpGet]
+        [Route("getArticlesByUsername/{username}")]
+        public async Task<IActionResult> getArticlesByUsername([FromRoute] string username)
+        {
+            var collection = db.GetCollection<Article>("Article");
+            var articles = collection.Find(x => x.PostedBy.Username == username).ToList();
+            return new JsonResult(articles);
+        }
         [HttpDelete]
         [Route("DeleteCategory")]
         public async Task<IActionResult> DeleteCategory([FromBody] Category category)
@@ -370,6 +377,12 @@ namespace SportNews.Controllers
             var collectionTags = db.GetCollection<Tag>("Tag");
             var article = collectionArticles.Find(x => x.Title == title).FirstOrDefault();
             IList<Article> retList = new List<Article>();
+
+            if(user.Articles == null)
+                user.Articles = new List<Article>();
+            if(user.Recommended == null)
+                user.Recommended = new List<Article>();
+
             if (user.Articles.Count < 10)
                 user.Articles.Add(article);
             else
@@ -446,7 +459,7 @@ namespace SportNews.Controllers
             collection.InsertOne(comment);
             return Ok();
         }
-        [HttpGet]
+        [HttpPost]
         [Route("getAllArticleComments")]
         public async Task<IActionResult> GetAllArticleComments([FromBody] Article article)
         {
