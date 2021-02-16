@@ -13,7 +13,7 @@ export default function News({user}){
 
     useEffect(() => {
         getNews();
-    },[] );
+    },[category] );
 
     const getNews = async () =>
     {

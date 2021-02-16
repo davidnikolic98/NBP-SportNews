@@ -14,6 +14,7 @@ namespace SportNews.Controllers
     public class ContentCreatorsController : ControllerBase
     {
 
+
         private IMongoDatabase db = Session.MongoDatabase;
 
         [HttpPost]
@@ -100,22 +101,6 @@ namespace SportNews.Controllers
             collectionContentCreators.UpdateOne(filter, update);
             return Ok();
         }
-        [HttpGet]
-        [Route("getArticlesByCategory/{category}")]
-        public async Task<IActionResult> GetArticlesByCategory([FromRoute] string category)
-        {
-            var collection = db.GetCollection<Article>("Article");
-            var articles = collection.Find(x => x.Category.Text == category).ToList();
-            return new JsonResult(articles);
-        }
-        // [HttpGet]
-        // [Route("getMyArticles/{username}")]
-        // public async Task<IActionResult> GetAllArticles([FromRoute] string username)
-        // {
-        //     var collection = db.GetCollection<Article>("Article");
-        //     var articles = collection.Find(x => x.PostedBy.Username == username).ToList();
-        //     return new JsonResult(articles);
-        // }
         [HttpGet]
         [Route("getAllArticles")]
         public async Task<IActionResult> GetAllArticles()
@@ -217,6 +202,14 @@ namespace SportNews.Controllers
 
             return Ok();
         }
+        [HttpGet]
+        [Route("getArticlesByCategory/{category}")]
+        public async Task<IActionResult> getArticlesByCategory([FromRoute] string category)
+        {
+            var collection = db.GetCollection<Article>("Article");
+            var articles = collection.Find(x => x.Category.Text == category).ToList();
+            return new JsonResult(articles);
+        }
 
         [HttpDelete]
         [Route("DeleteCategory")]
@@ -241,11 +234,19 @@ namespace SportNews.Controllers
         }
         [HttpGet]
         [Route("getAllCategories")]
-        public async Task<IActionResult> GetAllCategories([FromRoute] string username)
+        public async Task<IActionResult> GetAllCategories()
         {
             var collection = db.GetCollection<Category>("Category");
             var categories = collection.Find(x => true).ToList();
             return new JsonResult(categories);
+        }
+        [HttpGet]
+        [Route("getCategory/{name}")]
+        public async Task<IActionResult> GetCategory([FromRoute] string name)
+        {
+            var collection = db.GetCollection<Category>("Category");
+            var category = collection.Find(x => x.Text==name).FirstOrDefault();
+            return new JsonResult(category);
         }
         [HttpPost]
         [Route("AddTag")]
@@ -259,10 +260,18 @@ namespace SportNews.Controllers
             }
             else return BadRequest("Tag already exists!");
         }
+        [HttpGet]
+        [Route("getTag/{name}")]
+        public async Task<IActionResult> GetTag([FromRoute] string name)
+        {
+            var collection = db.GetCollection<Tag>("Tag");
+            var tag = collection.Find(x => x.Text == name).FirstOrDefault();
+            return new JsonResult(tag);
+        }
          
         [HttpGet]
         [Route("getAllTags")]
-        public async Task<IActionResult> GetAllTags([FromRoute] string username)
+        public async Task<IActionResult> GetAllTags()
         {
             var collection = db.GetCollection<Tag>("Tag");
             var tags = collection.Find(x => true).ToList();

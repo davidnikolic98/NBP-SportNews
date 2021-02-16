@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Podaci\\7. sem\\Napredne baze podataka\\SportNews\\SportNews.csproj": {}
+    "C:\\Users\\PC\\Desktop\\NBP-SportNews\\SportNews.csproj": {}
   },
   "projects": {
-    "D:\\Podaci\\7. sem\\Napredne baze podataka\\SportNews\\SportNews.csproj": {
+    "C:\\Users\\PC\\Desktop\\NBP-SportNews\\SportNews.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Podaci\\7. sem\\Napredne baze podataka\\SportNews\\SportNews.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\Desktop\\NBP-SportNews\\SportNews.csproj",
         "projectName": "SportNews",
-        "projectPath": "D:\\Podaci\\7. sem\\Napredne baze podataka\\SportNews\\SportNews.csproj",
-        "packagesPath": "C:\\Users\\DavidNikolic\\.nuget\\packages\\",
-        "outputPath": "D:\\Podaci\\7. sem\\Napredne baze podataka\\SportNews\\obj\\",
+        "projectPath": "C:\\Users\\PC\\Desktop\\NBP-SportNews\\SportNews.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC\\Desktop\\NBP-SportNews\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DavidNikolic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -71,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
