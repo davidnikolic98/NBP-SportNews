@@ -64,7 +64,7 @@ export default function App() {
               <Route path="/create">
                   <CreateNews user={user}/>
               </Route>
-              <Route path="/details">
+              <Route path="/details/:name">
                   <NewsDetails user={user}/>
               </Route>
               <Route path="/mynews">

@@ -1,6 +1,6 @@
 import React from 'react';
-
-import './NewsDetails.css'
+import { useEffect,useState} from 'react';
+import './NewsDetails.css';
 import Comment from "./Comment";
 import {
     BrowserRouter as Router,
@@ -8,21 +8,40 @@ import {
     Route,
     Link,
     NavLink,
+    useParams,
     
     
   } from "react-router-dom";
 
-export default function NewsDetails(){
+export default function NewsDetails({user}){
+
+    const {name} = useParams();
+    const [article,setArticle]=useState([]);
+
+    useEffect(() => {
+        getNewsDetail();
+    },[] );
+
+    const getNewsDetail = async () =>{
+        const response = await fetch('https://localhost:5001/ContentCreators/getArticle/'+name);
+        
+        const data = await response.json();
+        
+        setArticle(data);
+        console.log(data);
+        
+    }
+
     return(
         <>
         <div className="div-news-details">
             <div className="news-details">
-                <div id="news-details-title">Malaika Arora's Gym Looks Keep Getting Better, She Keeps Looking Hotter</div>
-                <div><span className="created-user">Pera Peric</span><span className="creation-date">13.2.2021</span></div>
-                <div className="news-details-description">Malaika raises temperature in a hot pink sports bra and black leggings .Malaika aces the gym look in a black sports bra and leggings .Yahoo News is better in the app .The actress looks fit in a black sports bra and matching leggings .Malaika in a Reebok sports bra and gym shorts .Yahoo News is better in the app. Malaika raises temperature in a hot pink sports bra and black leggings .Malaika aces the gym look in a black sports bra and leggings .Yahoo News is better in the app .The actress looks fit in a black sports bra and matching leggings .</div>
+                <div id="news-details-title">{article.title}</div>
+                <div><span className="created-user">{article.postedBy?.name}</span><span className="creation-date">{article.created}</span></div>
+                <div className="news-details-description">{article.text}</div>
                 <div className="post-comment">
                     <p>Post a comment</p>
-                    <p>Nickname: <input type="text"/></p>
+                    
                     <textarea type="text"/><br/><button>Post</button>
                 </div>
                 <div className="comments">
